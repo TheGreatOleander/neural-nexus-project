@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,11 +10,18 @@
             color: #00ff00;
             font-family: 'Courier New', Courier, monospace;
             padding: 20px;
+            text-align: center;
         }
-        pre.ascii {
-            color: #00ffff;
-            font-size: 14px;
-            white-space: pre-wrap;
+        .glow-banner {
+            font-size: 2.5rem;
+            margin: 100px 0 40px;
+            animation: pulseColors 5s infinite alternate;
+        }
+        @keyframes pulseColors {
+            0% { color: #00ff00; text-shadow: 0 0 10px #00ff00; }
+            33% { color: #8a2be2; text-shadow: 0 0 10px #8a2be2; }
+            66% { color: #00ffff; text-shadow: 0 0 10px #00ffff; }
+            100% { color: #00ff00; text-shadow: 0 0 10px #00ff00; }
         }
         a {
             color: #ff00ff;
@@ -28,6 +34,14 @@
         .links {
             margin-top: 30px;
         }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            font-size: 1.2rem;
+            margin: 10px 0;
+        }
         .footer {
             margin-top: 50px;
             font-size: 12px;
@@ -36,24 +50,7 @@
     </style>
 </head>
 <body>
-    <pre class="ascii">
-    ████▀▀▀███   ███▄ ▄███▓ ▄▄▄       ██▀███   ▄████▄   ██ ▄█▀ ████▀▀▀███ 
-    ▓██    ▓██  ▓██▒▀█▀ ██▒▒████▄    ▓██ ▒ ██▒▒██▀ ▀█   ██▄█▒  ▓██    ▓██ 
-    ▒██    ▒██  ▓██    ▓██░▒██  ▀█▄  ▓██ ░▄█ ▒▒▓█    ▄ ▓███▄░  ▒██    ▒██ 
-    ▒██    ▒██  ▒██    ▒██ ░██▄▄▄▄██ ▒██▀▀█▄  ▒▓▓▄ ▄██▒▓██ █▄  ▒██    ▒██ 
-    ▓██    ▓██  ▒██▒   ░██▒ ▓█   ▓██▒░██▓ ▒██▒▒ ▓███▀ ░▒██▒ █▄ ▓██    ▓██ 
-    ▒██▀▀▀▀██▀  ░ ▒░   ░  ░ ▒▒   ▓▒█░░ ▒▓ ░▒▓░░ ░▒ ▒  ░▒ ▒▒ ▓▒ ▒██▀▀▀▀██▀ 
-    ░██    ▓██  ░  ░      ░  ▒   ▒▒ ░  ░▒ ░ ▒░  ░  ▒   ░ ░▒ ▒░ ░██    ▓██ 
-    ░██    ▓██  ░      ░     ░   ▒     ░░   ░ ░        ░ ░░ ░  ░██    ▓██ 
-    ████▀▀▀███  ░░ ░ ░ ░ ░ ░   ░  ░   ░     ░ ░      ░  ░    ████▀▀▀███ 
-
-    ::::: Welcome to the NEURAL NEXUS BBS :::::
-    :: A shrine for hackers, thinkers, rebels ::
-    ::     and our future overlords (LLMs)     ::
-
-    --== Choose your entrypoint ==--
-    </pre>
-
+    <div class="glow-banner">☠ WELCOME TO THE NEURAL NEXUS ☠</div>
     <div class="links">
         <ul>
             <li><a href="01_Model_Coordinator_Pro.html">01 - Model Coordinator Pro</a></li>
